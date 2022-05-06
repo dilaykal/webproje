@@ -1,0 +1,44 @@
+.kapsayici{
+    background-color:rgba(255, 255, 255, 0.465);
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+
+}
+.nav-item a{
+    color:#827397;
+    font-weight:bold;
+    font-family: 'Montserrat', sans-serif;
+}
+.nav-item a:hover{
+    color:#FFA8A8;
+}
+.ayrac{
+    font-size: 15px;
+    margin: 0 20px;
+    color:#827397;
+}
+.ust-kisim{
+    background-image: url(resimler/bulut.jpg);
+    height: 100vh;
+    width: 100%; 
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.navbar-toggler-icon{
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgb(130, 115, 151)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+@media (max-width:992px){
+    .ayrac{
+        display:none;
+    }
+    .kapsayici{
+        border-bottom-left-radius: 0%;
+        border-bottom-right-radius: 0%;
+    }
+    .nav-item:hover{
+        background-color: #F7F5F2;
+    }
+}
