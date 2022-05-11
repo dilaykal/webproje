@@ -42,3 +42,26 @@
         background-color: #F7F5F2;
     }
 }
+.bosluk{
+    margin-top:100px;
+}
+.giriş{
+    height:60px;
+    background-color:#C4DDFF;
+}
+.tirnak{
+    color:#7FB5FF;
+    font-size: 36px;
+}
+.paragraf{
+    font-size:20px;
+}
+.içerikler{
+    background-color: #FBF8F1;
+}
+.kimim{
+    background-color: #C4DDFF;
+}
+.profil img{
+    border-radius: 100px;
+}
