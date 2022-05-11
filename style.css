@@ -47,7 +47,7 @@
 }
 .giriş{
     height:60px;
-    background-color:#C4DDFF;
+    background-color:#FBF8F1;
 }
 .tirnak{
     color:#7FB5FF;
@@ -57,11 +57,18 @@
     font-size:20px;
 }
 .içerikler{
-    background-color: #FBF8F1;
+    background-color:#C4DDFF;
 }
 .kimim{
-    background-color: #C4DDFF;
+    background-color:#FBF8F1 ;
 }
 .profil img{
     border-radius: 100px;
+}
+.footer{
+    background-color: #C4DDFF;
+    height:300px;
+}
+.footer-sütun{
+    height:300px;
 }
