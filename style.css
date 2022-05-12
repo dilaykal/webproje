@@ -17,6 +17,15 @@
     margin: 0 20px;
     color:#827397;
 }
+.ust-kisim-sayfalar{
+    background-image: url(resimler/bulut.jpg);
+    height: 90vh;
+    width: 100%; 
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
 .ust-kisim{
     background-image: url(resimler/bulut.jpg);
     height: 100vh;
@@ -71,4 +80,7 @@
 }
 .footer-sütun{
     height:300px;
+}
+.yuvarlak img{
+    border-radius:100px;
 }
