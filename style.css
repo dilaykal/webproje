@@ -84,3 +84,21 @@
 .yuvarlak img{
     border-radius:100px;
 }
+.login{
+    padding:40px 0 40px 0;
+    background-color:#f5f5f5;
+    width:320px;
+    margin:auto;
+    display: flex;
+    align-items: center;
+}
+html,body{
+    height:100%;
+}
+.form-control{
+    position:relative;
+    box-sizing:border-box;
+}
+.cv{
+    background-color: #FBF8F1;
+}

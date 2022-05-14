@@ -1,2 +1,4 @@
+
 <?php
-    if($_POST['mail'])
+echo"Merhaba Dünya";
+?>
