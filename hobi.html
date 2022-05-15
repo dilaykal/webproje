@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <script>
+        function getir(){
+            fetch("https://www.balldontlie.io/api/v1/players/237").then(function(response){
+               return response.json();
+            }).then(function(data){
+              console.log(data);
+              document.getElementById("pos").innerHTML=data.firt_name;
+            });
+        }
+    </script>
+    <title>Document</title>
+</head>
+<body onload="getir()">
+    <div class="ust-kisim">
+        <!-- menü oluşturma-->
+        <nav class="navbar navbar-expand-lg kapsayici">
+            <div class="container p-0">
+              <button 
+                class="navbar-toggler ms-auto" 
+                type="button" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#navbarSupportedContent" 
+                aria-controls="navbarSupportedContent" 
+                aria-expanded="false" 
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item d-flex align-items-center p-2">
+                        <a class="nav-link" href="hakkımda.html">Hakkımda</a>
+                        <span class="ayrac">|</span>
+                    </li>
+                    <li class="nav-item d-flex align-items-center p-2">
+                        <a class="nav-link" href="egitim.html">Eğitim</a>
+                        <span class="ayrac">|</span>
+                     </li>
+                     <li class="nav-item d-flex align-items-center p-2">
+                        <a class="nav-link" href="sehrim.html">Şehrim</a>
+                        <span class="ayrac">|</span>
+                    </li>
+                    <li class="nav-item d-flex align-items-center p-2">
+                        <a class="nav-link" href="takım.html">Takımım</a>
+                        <span class="ayrac">|</span>
+                    </li>
+                    <li class="nav-item d-flex align-items-center p-2">
+                        <a class="nav-link" href="hobi.html">İlgi Alanlarım</a>
+                        <span class="ayrac">|</span>
+                    </li>
+                    <li class="nav-item d-flex align-items-center p-2">
+                        <a class="nav-link" href="iletisim.html">İletişim</a>
+                        <span class="ayrac">|</span>
+                    </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+    <div class="col-md-12">
+        <h3>Hobilerim</h3>
+        <hr/>
+            <div class="hedefler d-flex flex-md-row flex-column">
+                <img src="resimler/duman.webp" class="img-thumbnail ms-3 mb-md-0" alt=""> 
+                <div class="yazilar ms-3 mt-3">                                                                                     
+                    <p>
+                        Öncelikle müzik dinlemeyi çok severim.Özellikle bulaşık yıkarken müzik 
+                        dinlemeyi çok severim.Terapi gibi gelir bana.<br>Genelde her tarz müziği dinlerim rap
+                        dinlemekten çok hoşlanmam. Dinlemekten hiç sıkılmadığım şarkılar Duman'ın 
+                        şarkılarıdır ve bir gün Duman konserine gitmeyi çokmisterim.
+                    </p>
+                </div> 
+            </div>  
+        <hr/>
+        <div class="hedefler d-flex flex-md-row flex-column">
+            <img src="resimler/pota.webp" class="img-thumbnail ms-3 mb-md-0" alt=""> 
+            <div class="yazilar ms-3 mt-3">                                                                                     
+                <p>
+                    Basketbola karşı hiçbir sempatim yokken ortaokulda beden eğitimi 
+                    öğretmenim sayesinde basketbola ilgim oluştu.Müdür yardımcısı arkadaşlarım ve öğrtmenlerimle
+                    birlikte basketbol oynardık.Öğretmenim basketbol da iyi olabileceğimi söyledi. Ortaokul ve 
+                    lise de amatör olarak oynadım. <br>
+                    NBA ve Türk Baketbolunu izlemeyi çok severim. Mili takımda oynayan şuan NBA'de oynayan
+                    Cedi Osman'ı Anadolu Efes'in genç kadrosundan beri takip ediyorum. NBA oyuncularından da 
+                    Lebron James, Kobe Bryant'ı severim.
+                    <p>
+                    "lebron :"
+                    <span id="pos"></span>
+                    </p>
+                </p>
+            </div> 
+        </div>
+        <div class="hedefler d-flex flex-md-row flex-column">
+            <img src="resimler/IMG_5825.HEIC" width="300px" class="img-thumbnail ms-3 mb-md-0" alt="">
+            <img src="resimler/IMG_5835.jpg" width="300px" class="img-thumbnail ms-3 mb-md-0" alt=""> 
+            <div class="yazilar ms-3 mt-3">                                                                                     
+                <p>
+                    Hayvanları çok severim özellikle köpekleri. 3 tane köpeğimiz var. 
+                    Rize'de evimizin bahçesinde yaşıyorlar. Onlarla vakit geçirmeyi oynamayı
+                    çok severim. Beyaz renkli olan Garip,barınaktan sahiplendik. İlk geldiiğinde 
+                    diğer köpeklerden ayrıldığı için çok mutsuzdu sürekli ağlıyordu ve hiç hareket
+                    etmiyordu. Çok ağladığı için bir gözünde mavi perde oluşmuştu. Veteriner
+                    tramva yaşadıklarınd olabileceğini söyledi ve damla verdi. Yaklaşık 1 hafta sonra 
+                    bize alıştı. Garip ilgiyi, sevilmeyi, koşmayı, ve oyun oynamayı çok sever.<br>
+                    Kahverengi köpeğimizin ismi Rintintin. İsmi çok tuhaf ama kendisi de çook tuhaf
+                    bir köpektir. Rintintin kendisi buldu bizi Gariple çok iyi anlaşıyorlar ve biraz 
+                    fazla kıskançtır. O da çok hareketli ama pek teması sevmez ve biraz ürkektir. Son olarakta
+                    Karabaş 3. köpeğimiz. Onun hiç fotoğrafı yok çünkü fotoğraf çekilmeyi
+                    hiç sevmez. Çok sakin bir köpek. Yemek yiyip bir yerlerde uyumayı çok sever.
+                    Sakin olmasına karşın da bazı durumlarda çok hırçınlaşabiliyor çok sahiplenici bir yapsısı var. 
+                    Çok uzun bahsettim ama en büyük hobim gerçekten onlarla vakit geçirmek. Size hepsini tanıtmak istedim.
+                </p>
+            </div> 
+        </div>  
+
+    </div>
+    
+    
+    <!--footer-->
+    <div class="container-fluid footer">
+        <div class="row">
+            <div class="col-md-12 footer-sütun d-flex flex-column justify-content-center align-items-center">
+                <div class="icons">
+                    <i class="fa-brands fa-instagram-square fa-3x me-2"></i>
+                    <i class="fa-brands fa-twitter-square fa-3x me-2"></i>
+                    <i class="fa-brands fa-youtube-square fa-3x me-2"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="bootstrap.js"></script>
+</body>
+</html>

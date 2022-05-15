@@ -23,7 +23,7 @@
     width: 100%; 
     background-size: cover;
     background-position: center center;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-attachment: fixed;
 }
 .ust-kisim{
@@ -32,7 +32,7 @@
     width: 100%; 
     background-size: cover;
     background-position: center center;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-attachment: fixed;
 }
 .navbar-toggler-icon{
@@ -102,4 +102,14 @@ html,body{
 .cv{
     background-color: #FBF8F1;
 } 
+
+.table-info.cv th{
+    background-color: #FBF8F1 !important;
+} 
+
+
+
+
+
+
 

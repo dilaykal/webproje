@@ -12,7 +12,7 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="ust-kisim">
+    <div class="ust-kisim-sayfalar">
         <!-- menü oluşturma-->
         <nav class="navbar navbar-expand-lg kapsayici">
             <div class="container p-0">
@@ -26,7 +26,7 @@
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
-              <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
                 <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                     <li class="nav-item d-flex align-items-center p-2">
                         <a class="nav-link" href="hakkımda.html">Hakkımda</a>
@@ -53,42 +53,44 @@
                         <span class="ayrac">|</span>
                     </li>
                 </ul>
-              </div>
             </div>
-        </nav>
-        <!--iletişim bilgileri-->
-        <main>
-            <div class="container">
-                
-                <form action="giris.html" name="Form" onsubmit="return control()">
-    
-                    <div class="form-group">
-                        <label for="name">İsim</label>
-                        <input type="text" name="name" class="form-control" placeholder="İsminizi Girin">							
-                        <small class="form-text text-muted">Zorunlu alan</small>
+        </div>
+    </nav>
+            <div class="col-md-12">
+                <h3>Rize</h3>
+                <hr/>
+                    <div class="hedefler d-flex flex-md-row flex-column">
+                        <img src="resimler/merkez.jfif" class="img-thumbnail ms-3 mb-md-0" alt=""> 
+                        <div class="yazilar ms-3 mt-3">                                                                                     
+                            <p>
+                                Rize, Karadeniz bölgesinin en karakteristik özelliklerini gösterir. 
+                                Anadolu’nun diğer bölgelerinden coğrafi yapısıyla olduğu gibi kültürel 
+                                yapısı ile de ayrılır. Dik yamaçlı vadileri, doruklara ulaşılabilir 
+                                dağları, buzul gölleri, zümrüt yeşili yaylaları, tarihi kemer köprüleri 
+                                ve kaleleri, coşkun akan dereleri ile çok özel bir turizm beldesidir. 
+                                Rize'de yaz mevsimi ılık geçer. Sonbahar ve kış mevsimleri ise yağışlı 
+                                geçer.Osmanlı döneminde liman, nahiye ve kaza merkezi olarak önemini 
+                                korumuştur. 1640 yılında buraya gelen Evliya Çelebi Rize’den şöyle söz 
+                                etmiştir: “Trabzon’a bağlı deniz kıyısında bahçeli güzel bir yerdir”.
+                                Osmanlı döneminde Batum Kalesi muhafızı Tuzcuoğlu Memiş Ağa (1814-1817)
+                                 ve Trabzon ağalarının isyanı (1835) gibi isyanlar olmuş ve 
+                                 bastırılmıştır. Rize 19. yüzyılda önemli bir kaza merkezidir.
+                                 Berlin Anlatmaşı ile (1878) Lazistan sancağının merkezi olan 
+                                 Batum Rusya’ya bırakılınca Rize Trabzon Vilayetine bağlı sancağın 
+                                 merkezi olmuştur.
+                            </p>
+                            <p>Rize ilinin adı ile ilgili olarak değişik görüşler ileri sürülmüştür; 
+                                Yunanca pirinç anlamına gelen Rhisos, Rumcada "Rıza" olarak dağ eteği 
+                                anlamında kullanılmıştır. Osmanlıca'da ise "Rize" ufak kırıntı, döküntü ,
+                                anlamındadır. Ayrıca Erzincan'ın Sakalar dönemindeki "Eriza" olan adının 
+                                başındaki "e" sesinin düşmesi ile adaş olarak Rize için de kullanıldığı 
+                                ifade edilmektedir.</p>
+                        </div> 
                     </div>
-    
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="text" name="email" class="form-control" placeholder="E-mail Girin">
-                        <small class="form-text text-muted">Zorunlu alan</small>
-                    </div>
-    
-                    <div class="form-group">
-                        <label for="message">Mesaj</label>
-                        <textarea name="message" id="message" rows="5" class="form-control"></textarea>
-                    </div>
-    
-                    <button class="btn btn-outline-secondary" type="reset" id="submit" name="submit" value="Reset" >Temizle</button>
-            
-                    <button class="btn btn btn-outline-secondary" type="submit" id="sub">Gönder</button>
-                    <br><br><br>
-    
-                </form>
-    
+                    
             </div>
-    
-        </main>
+        </div>
+    </div>
     <!--footer-->
     <div class="container-fluid footer">
         <div class="row">
@@ -101,34 +103,6 @@
             </div>
         </div>
     </div>
-    <!--JavaScript-->
     <script src="bootstrap.js"></script>
-    <script>
-		function control()
-		{
-			var x = document.forms["Form"]["name"].value;
-			if (x == "") 
-			{
-				alert("İsim boş bırakılamaz");
-				return false;
-			}
-
-			var y = document.forms["Form"]["email"].value;
-			if (y == "") 
-			{
-				alert("Mail Kısmı Boş bırakılamaz");
-				return false;
-			}
-
-			var forMail = /^[a-zA-Z0-9._-]+@([a-zA-Z0-9.-]+.)+([.])+[a-zA-Z0-9.-]{2,4}$/;
-			if (forMail.test(y) == false) 
-			{
-				alert("Geçersiz Mail Adresi!!!");
-				return false;
-			}
-
-
-		}	
-    </script>
 </body>
 </html>
