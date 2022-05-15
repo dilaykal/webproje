@@ -10,19 +10,48 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <script>
-        function getir(){
-            fetch("https://www.balldontlie.io/api/v1/players/237").then(function(response){
-               return response.json();
-            }).then(function(data){
-              console.log(data);
-              document.getElementById("pos").innerHTML=data.firt_name;
-            });
-        }
-    </script>
     <title>Document</title>
 </head>
-<body onload="getir()">
+<script>
+    function getir(){
+        fetch("https://www.balldontlie.io/api/v1/players/237").then(function(response){
+           return response.json();
+        }).then(function(data){
+          console.log(data);
+          document.getElementById("data").innerHTML=data.first_name;
+          document.getElementById("data1").innerHTML=data.last_name;
+          document.getElementById("data2").innerHTML=data.height_feet;
+          document.getElementById("data3").innerHTML=data.position;
+        });
+    }
+    function getir1(){
+        fetch("https://www.balldontlie.io/api/v1/players/1043").then(function(response){
+           return response.json();
+        }).then(function(pos){
+          console.log(pos);
+          document.getElementById("pos").innerHTML=pos.first_name;
+          document.getElementById("pos1").innerHTML=pos.last_name;
+          document.getElementById("pos2").innerHTML=pos.height_inches;
+        });
+    }
+    function getir2(){
+        fetch("https://theaudiodb.com/api/v1/json/2/discography.php?s=duman").then(function(response){
+           return response.json();
+        }).then(function(dum){
+          console.log(dum);
+          document.getElementById("dum").innerHTML=dum.album[0].strAlbum;
+          document.getElementById("dum1").innerHTML=dum.album[0].intYearReleased;
+          document.getElementById("dum2").innerHTML=dum.album[1].strAlbum;
+          document.getElementById("dum3").innerHTML=dum.album[1].intYearReleased;
+          document.getElementById("dum4").innerHTML=dum.album[2].strAlbum;
+          document.getElementById("dum5").innerHTML=dum.album[2].intYearReleased;
+          document.getElementById("dum6").innerHTML=dum.album[3].strAlbum;
+          document.getElementById("dum7").innerHTML=dum.album[3].intYearReleased;
+
+        });
+    }
+</script>
+<body onload="getir(),getir1(),getir2()">
     <div class="ust-kisim">
         <!-- menü oluşturma-->
         <nav class="navbar navbar-expand-lg kapsayici">
@@ -77,7 +106,16 @@
                         Öncelikle müzik dinlemeyi çok severim.Özellikle bulaşık yıkarken müzik 
                         dinlemeyi çok severim.Terapi gibi gelir bana.<br>Genelde her tarz müziği dinlerim rap
                         dinlemekten çok hoşlanmam. Dinlemekten hiç sıkılmadığım şarkılar Duman'ın 
-                        şarkılarıdır ve bir gün Duman konserine gitmeyi çokmisterim.
+                        şarkılarıdır ve bir gün Duman konserine gitmeyi çok isterim.<br>
+                        Albüm ismi:<span id="dum"></span><br>
+                        Çıkış Yılı:<span id="dum1"></span><br>
+                        Albüm ismi:<span id="dum2"></span><br>
+                        Çıkış Yılı:<span id="dum3"></span><br>
+                        Albüm ismi:<span id="dum4"></span><br>
+                        Çıkış Yılı:<span id="dum5"></span><br>
+                        Albüm ismi:<span id="dum6"></span><br>
+                        Çıkış Yılı:<span id="dum7"></span><br>    
+
                     </p>
                 </div> 
             </div>  
@@ -92,11 +130,16 @@
                     lise de amatör olarak oynadım. <br>
                     NBA ve Türk Baketbolunu izlemeyi çok severim. Mili takımda oynayan şuan NBA'de oynayan
                     Cedi Osman'ı Anadolu Efes'in genç kadrosundan beri takip ediyorum. NBA oyuncularından da 
-                    Lebron James, Kobe Bryant'ı severim.
-                    <p>
-                    "lebron :"
-                    <span id="pos"></span>
-                    </p>
+                    Lebron James, Kobe Bryant'ı severim.<br>
+                    <span id="data"></span>        
+                    <span id="data1"></span>:<br>
+                    Boyu:<span id="data2"></span><br>
+                    Pozisyon:<span id="data3"></span><br>
+                    --------<br>
+                    <span id="pos"></span><br>      
+                    <span id="pos1"></span>    
+                    <span id="pos2"></span><br>              
+
                 </p>
             </div> 
         </div>
