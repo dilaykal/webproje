@@ -19,8 +19,7 @@
 }
 .ust-kisim-sayfalar{
     background-image: url(resimler/bulut.jpg);
-    height: 90vh;
-    width: 100%; 
+    
     background-size: cover;
     background-position: center center;
     background-repeat: repeat;
@@ -28,8 +27,7 @@
 }
 .ust-kisim{
     background-image: url(resimler/bulut.jpg);
-    height: 100vh;
-    width: 100%; 
+    
     background-size: cover;
     background-position: center center;
     background-repeat: repeat;

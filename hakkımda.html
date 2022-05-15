@@ -9,21 +9,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <script>
-        function getir(){
-            fetch("https://www.balldontlie.io/api/v1/players/237").then(function(response){
-               return response.json();
-            }).then(function(data){
-              console.log(data);
-              document.getElementById("pos").innerHTML=data.firt_name;
-            });
-        }
-    </script>
     <title>Document</title>
 </head>
-<body onload="getir()">
-    <div class="ust-kisim">
+<body>
+    <div class="ust-kisim-sayfalar">
         <!-- menü oluşturma-->
         <nav class="navbar navbar-expand-lg kapsayici">
             <div class="container p-0">
@@ -67,42 +56,49 @@
               </div>
             </div>
         </nav>
-    <div class="col-md-12">
-        <h3>Hobilerim</h3>
-        <hr/>
-            <div class="hedefler d-flex flex-md-row flex-column">
-                <img src="resimler/duman.webp" class="img-thumbnail ms-3 mb-md-0" alt=""> 
-                <div class="yazilar ms-3 mt-3">                                                                                     
-                    <p>
-                        Öncelikle müzik dinlemeyi çok severim.Özellikle bulaşık yıkarken müzik 
-                        dinlemeyi çok severim.Terapi gibi gelir bana.<br>Genelde her tarz müziği dinlerim rap
-                        dinlemekten çok hoşlanmam. Dinlemekten hiç sıkılmadığım şarkılar Duman'ın 
-                        şarkılarıdır ve bir gün Duman konserine gitmeyi çokmisterim.
-                    </p>
-                </div> 
-            </div>  
-        <hr/>
-        <div class="hedefler d-flex flex-md-row flex-column">
-            <img src="resimler/pota.webp" class="img-thumbnail ms-3 mb-md-0" alt=""> 
-            <div class="yazilar ms-3 mt-3">                                                                                     
-                <p>
-                    Basketbola karşı hiçbir sempatim yokken ortaokulda beden eğitimi 
-                    öğretmenim sayesinde basketbola ilgim oluştu.Müdür yardımcısı arkadaşlarım ve öğrtmenlerimle
-                    birlikte basketbol oynardık.Öğretmenim basketbol da iyi olabileceğimi söyledi. Ortaokul ve 
-                    lise de amatör olarak oynadım. <br>
-                    NBA ve Türk Baketbolunu izlemeyi çok severim. Mili takımda oynayan şuan NBA'de oynayan
-                    Cedi Osman'ı Anadolu Efes'in genç kadrosundan beri takip ediyorum. NBA oyuncularından da 
-                    Lebron James, Kobe Bryant'ı severim.
-                    <p>
-                    "lebron :"
-                    <span id="pos"></span>
-                    </p>
-                </p>
-            </div> 
+        <!--ilk görünüm-->
+        <div class="container mt-4 mb-4">
+            <div class="row">
+                <div class="col-md12 d-flex flex-column align-items-center">   
+            </div>
         </div>
     </div>
-    
-    
+    <div class="container my-4">
+        <div class="row">
+            <div class="col-md-12">
+                <h3>Hakkımda Bilgiler</h3>
+                <hr/>
+                    <p>
+                        Merhaba ben Dilay.7 mayıs 2001 doğumluyum. 21 yaşımdayım.Rize'de
+                        doğdum büyüdüm. Şu an da Sakarya Üniversitesinde bilgisayar mühendisliği
+                        okuyorum.</br>Basketbola çok ilgim var ve bu ilgim ortaokuldaki beden eğitimi hocam sayesinde oluştu.
+                        ortaokul ve lisede amatör olarak basketbol oynadım. Basketbol maçları izlemeyi de çok sevrim.Bir de müzik dinleyerek
+                        bulaşık yıkamayı çok severim. Terapi gibi gelir.
+                        </p>
+                        <div class="hedefler d-flex flex-md-row flex-column">
+                            <img src="resimler/IMG_5835.jpg" width="200px" class="img-thumbnail ms-3 mb-md-0" alt=""> 
+                            <div class="yazilar ms-3 mt-3">                                                                                     
+                                <p>
+                                    Hayvanları çok severim özellikle köpekleri. 3 tane köpeğimiz var. 
+                                    Rize'de evimizin bahçesinde yaşıyorlar. Onlarla vakit geçirmeyi oynamayı
+                                    çok severim. Beyaz renkli olan Garip,barınaktan sahiplendik. İlk geldiiğinde 
+                                    diğer köpeklerden ayrıldığı için çok mutsuzdu sürekli ağlıyordu ve hiç hareket
+                                    etmiyordu. Çok ağladığı için bir gözünde mavi perde oluşmuştu. Veteriner
+                                    tramva yaşadıklarınd olabileceğini söyledi ve damla verdi. Yaklaşık 1 hafta sonra 
+                                    bize alıştı. Garip ilgiyi, sevilmeyi, koşmayı, ve oyun oynamayı çok sever.<br>
+                                    Kahverengi köpeğimizin ismi Rintintin. İsmi çok tuhaf ama kendisi de çook tuhaf
+                                    bir köpektir. Rintintin kendisi buldu bizi Gariple çok iyi anlaşıyorlar ve biraz 
+                                    fazla kıskançtır. O da çok hareketli ama pek teması sevmez ve biraz ürkektir. Son olarakta
+                                    Karabaş 3. köpeğimiz. Onun hiç fotoğrafı yok çünkü fotoğraf çekilmeyi
+                                    hiç sevmez. Çok sakin bir köpek. Yemek yiyip bir yerlerde uyumayı çok sever.
+                                    Sakin olmasına karşın da bazı durumlarda çok hırçınlaşabiliyor çok sahiplenici bir yapsısı var. 
+                                    Çok uzun bahsettim ama en büyük hobim gerçekten onlarla vakit geçirmek. Size hepsini tanıtmak istedim.
+                                </p>
+                            </div> 
+                        </div>  
+            </div>
+        </div>
+    </div>
     <!--footer-->
     <div class="container-fluid footer">
         <div class="row">
