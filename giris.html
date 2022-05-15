@@ -11,14 +11,66 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <title>Document</title>
 </head>
-<body class="text-center login">
-        <form method="POST" action="dosya.php">
-            <h1 class="h3 mb-3">Lütfen Giriş Yapın</h1>
-            <input class="form-control" name="mail" placeholder="E-posta" required autofocus/>
-            <input type="password" name="sifre" class="form-control" placeholder="Şifre" required />
-            <input class="w-50 btn btn-lg btn-primary" type="submit" name="giris" value="Giriş Yap" />
-        </form>
-    
+<body>
+    <main>
+		<div class="container">
+			<div class="row">
+				<script type="text/javascript">
+
+					function getParameterByName(name, url) 
+					{
+		            	if (!url) url = window.location.href;
+    		       		name = name.replace(/[\[\]]/g, '\\$&');
+        		    	var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+            		    	results = regex.exec(url);
+           				if (!results) return null;
+           				if (!results[2]) return '';
+           				return decodeURIComponent(results[2].replace(/\+/g, ' '));
+        			}
+
+  				    var name = getParameterByName('name');
+  				    var email = getParameterByName('email');
+  				    var message = getParameterByName('message');
+
+				</script>
+
+				<table class="table">
+						<thead class="table-info">
+							<tr>
+								<th>Başarılı Bir şekilde Gönderdiniz :)</th>
+							</tr>
+						</thead>
+
+						<tbody>
+							<tr>
+								<td>İsminiz</td>
+								<td>
+									<script>document.write(name);
+									</script>
+								</td>
+							</tr>
+	
+							<tr>
+								<td>E-Mail</td>
+								<td>
+									<script>document.write(email);
+									</script>
+								</td>
+							</tr>
+	
+							<tr>
+								<td>Mesajınız</td>
+								<td>
+									<script>document.write(message);
+									</script>
+								</td>
+							</tr>
+						</tbody>
+				</table>	
+			</div>
+		</div>
+	</main>
+
     <script src="bootstrap.js"></script>
 </body>
 </html>
